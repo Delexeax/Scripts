@@ -1,4 +1,4 @@
-local humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid
+local humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid -- idk why not work
 
 humanoid.BreakJointsOnDeath = false
 
