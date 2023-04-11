@@ -3,7 +3,7 @@ local humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid -- id
 humanoid.BreakJointsOnDeath = false
 
 humanoid.Died:Connect(function()
-	for index,joint in pairs(script.Parent:GetDescendants()) do
+	for index,joint in pairs(humanoid.Parent:GetDescendants()) do
 		if joint:IsA("Motor6D") then
 			local socket = Instance.new("BallSocketConstraint")
 			local a1 = Instance.new("Attachment")
